@@ -27,7 +27,7 @@ public class AndroidSelenideTests extends TestBase {
   @Test
   void searchInNewWikiAppTest() {
     step("Click skip button", () ->
-      $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click());
+        $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click());
 
     step("Type search", () -> {
       $(MobileBy.id("org.wikipedia.alpha:id/search_container")).click();
@@ -35,6 +35,6 @@ public class AndroidSelenideTests extends TestBase {
     });
 
     step("Verify content found", () ->
-        $$(byClassName("android.widget.TextView")).shouldHave(sizeGreaterThan(0)));
+        $$(MobileBy.id("org.wikipedia.alpha:id/search_src_text")).shouldHave(sizeGreaterThan(0)));
   }
 }
