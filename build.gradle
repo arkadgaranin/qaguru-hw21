@@ -35,7 +35,8 @@ dependencies {
             "io.qameta.allure:allure-selenide:$allureVersion",
             "io.appium:java-client:$appiumVersion",
             "io.rest-assured:rest-assured:4.5.1",
-            "org.junit.jupiter:junit-jupiter-api:$junitVersion")
+            "org.junit.jupiter:junit-jupiter-api:$junitVersion",
+            "org.aeonbits.owner:owner:1.0.4")
     testRuntimeOnly(
             "org.slf4j:slf4j-simple:$slf4jVersion",
             "org.junit.jupiter:junit-jupiter-engine:$junitVersion")
